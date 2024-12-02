@@ -1,0 +1,83 @@
+
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/dap-design-system"></script>
+    <link href="https://kau.gov.hu/dap/dist/static/css/login.css" rel="stylesheet">
+  <link rel="preload" as="font" crossOrigin="anonymous" type="font/woff2" href="./static/font/InterVariable.woff2">
+  <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon" sizes="48x48"/>
+  <link rel="mask-icon" href="/static/images/dap-logo.svg"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png" />
+</head>
+
+<body>
+<main class="login-page">
+  <div class="notification" hidden="hidden">
+    <p>...</p>
+    <button type="button" class="close-button">
+      <img
+        alt="Bezárás"
+        src="./static/images/close.svg"
+        title="Bezárás"
+      />
+    </button>
+  </div>
+
+<section class="with-form">
+    <div class="content-wrapper">
+        <div class="kau-content">
+            <header>
+                header
+            </header>
+        </div>
+        <div class="dap-login dap-login--no-border">
+            <div class="nav-buttons">
+                <form
+                        action=""
+                        id="login-form"
+                        method="post"
+                        noValidate>
+                    <input type="text" placeholder="formon belul" name="i1">
+                    <dap-ds-stack>
+                                      <input type="text" placeholder="stacken belul" name="i2">
+      <dap-ds-input
+                                feedbackType="negative"
+                                helperText="Kérjük adja meg hogyan szólithatjuk"
+                                id="name"
+                                label="Felhasználónév"
+                                name="name">
+                        </dap-ds-input>
+                        <dap-ds-password-input
+                                helperText="Ammenyiben telefon szeretne kommunikálni kérjük adja meg a számát amin kereshetjük"
+                                id="password"
+                                label="Jelszó"
+                                name="password"
+                                type="password">
+                        </dap-ds-password-input>
+                        <a class="forgotten-password-link" href="" target="_blank">Elfelejtett jelszó</a>
+                        <dap-ds-feedback type="negative">
+                            A felhasználónévhez vagy jelszóhoz nem tartozik Ügyfélkapu+ regisztráció. <a href="">Még nem igényelt Ügyfélkapu+-t?</a>
+                            <br><br>Még 5 alkalommal próbálkozhat.
+                        </dap-ds-feedback>
+                        <input
+                                class="button-primary button--large"
+                                title="Bejelentkezés"
+                                type="submit"
+                                name="submit"
+                                value="Bejelentkezés"
+                        />
+                    </dap-ds-stack>
+                </form>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</main>
+<script src="https://kau.gov.hu/dap/dist/static/js/login.js"></script>
+</body>
+</html>
